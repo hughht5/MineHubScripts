@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         MineHub Trial
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
-// @description  try to take over the world!
-// @author       You
+// @version      0.1.3
+// @description  temporary script for the current trial
+// @author       hugh halford-thompson, MineHub
 // @match        https://minehub-ui-sandbox.eu-de.mybluemix.net/*
 // @match        https://minehub-ui-uat.mybluemix.net/*
 // @grant        none
