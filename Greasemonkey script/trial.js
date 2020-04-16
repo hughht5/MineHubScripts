@@ -5,6 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://minehub-ui-sandbox.eu-de.mybluemix.net/*
+// @match        https://minehub-ui-uat.mybluemix.net/*
 // @grant        none
 // @run-at       document-start
 // @updateURL    https://raw.githubusercontent.com/hughht5/MineHubScripts/master/Greasemonkey%20script/trial.js
