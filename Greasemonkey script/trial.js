@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MineHub Trial
 // @namespace    http://tampermonkey.net/
-// @version      0.1.3
+// @version      0.1.4
 // @description  temporary script for the current trial
 // @author       hugh halford-thompson, MineHub
 // @match        https://minehub-ui-sandbox.eu-de.mybluemix.net/*
