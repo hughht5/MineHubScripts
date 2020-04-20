@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MineHub Trial
 // @namespace    http://tampermonkey.net/
-// @version      0.1.4
+// @version      0.1.5
 // @description  temporary script for the current trial
 // @author       hugh halford-thompson, MineHub
 // @match        https://minehub-ui-sandbox.eu-de.mybluemix.net/*
@@ -88,7 +88,7 @@
           console.log('Changing create new contract payment terms page');
           changePaymentTerms();
         }
-        if (window.location.href.endsWith("contracts/new/edit#PaymentTerms")){
+        if (window.location.href.endsWith("contracts/new/edit#Signature")){
           console.log('Hiding Submit Transaction button and renaming save draft to submit');
           changeSignaturePage();
         }
