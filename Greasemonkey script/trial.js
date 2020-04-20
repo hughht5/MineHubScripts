@@ -88,6 +88,10 @@
           console.log('Changing create new contract payment terms page');
           changePaymentTerms();
         }
+        if (window.location.href.endsWith("contracts/new/edit#PaymentTerms")){
+          console.log('Hiding Submit Transaction button and renaming save draft to submit');
+          changeSignaturePage();
+        }
 
 
         //When viewing contracts
@@ -221,6 +225,16 @@
               this.remove();
           }
         }
+      });
+    }
+
+    function changeSignaturePage(){
+      $(".bx--btn--primary").each(function(){
+          if (this.textContent == 'Submit Transaction'){
+            this.hidden = true;
+          }else if (this.textContent == 'Save Draft'){
+            this.textContent = 'Submit';
+          }
       });
     }
 
