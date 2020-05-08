@@ -38,9 +38,11 @@
           //Remove fields from drop down other than Iron Ore
           console.log('removing values from production report dropdown');
           $("#primaryConcentrate > option").each(function() {
-              if (this.value == 'Fe'|| this.value == 'InS'|| this.value == 'F'|| this.value == 'Cl'|| this.textContent == 'Select a Product'){
+              if (this.value == 'Fe'|| this.value == 'In (s)'|| this.value == 'F'|| this.value == 'Cl'|| this.textContent == 'Select a Product'){
               }else{
+                  console.log('removing ' + this.value + ' from product dropdown');
                   this.remove();
+
               }
           });
           console.log('Changing create PR words');
