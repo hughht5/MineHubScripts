@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         MineHub Trial
+// @name         MineHub Trial Vale
 // @namespace    http://tampermonkey.net/
 // @version      0.1.6
 // @description  temporary script for the current trial
@@ -299,7 +299,7 @@
         this.children[0].textContent == 'S (%)' ||
         this.children[0].textContent == 'SiO2 (%)' ||
         this.children[0].textContent == 'LOI (%)' ||
-        this.children[0].textContent == 'Oth.Metals (%)' ||
+        this.children[0].textContent == 'Mn (%)' ||
         this.children[0].textContent == 'Maximum size (mm)' ||
         this.children[0].textContent == '% above maximum size' ||
         this.children[0].textContent == 'Minimum size (mm)' ||
@@ -311,8 +311,6 @@
           this.children[0].textContent = "LOI (%)";
         } else if (this.children[0].textContent == 'Na (%)') {
           this.children[0].textContent = "P (%)";
-        } else if (this.children[0].textContent == 'Te (%)') {
-          this.children[0].textContent = "Oth.Metals (%)";
         } else if (this.children[0].textContent == 'Thermal Coal (%)') {
           this.children[0].textContent = "Minimum size (mm)";
         } else if (this.children[0].textContent == 'Sn (%)') {
