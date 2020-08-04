@@ -17,7 +17,7 @@
   var changed = false;
 
   window.addEventListener('load', function () {
-    console.log("It's loaded! - changing text every 1/2 second. Try to find a better way to detect onLoad sow e can call run() only once.");
+    console.log("It's loaded! - changing text every 1/2 second. Try to find a better way to detect onLoad so we can call run() only once.");
     run();
     setInterval(run, 500); // check again in a half second
   });
