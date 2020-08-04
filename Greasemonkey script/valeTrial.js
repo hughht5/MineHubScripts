@@ -8,8 +8,8 @@
 // @match        https://minehub-ui-uat.mybluemix.net/*
 // @grant        none
 // @run-at       document-start
-// @updateURL    https://raw.githubusercontent.com/hughht5/MineHubScripts/master/Greasemonkey%20script/trial.js
-// @downloadURL  https://raw.githubusercontent.com/hughht5/MineHubScripts/master/Greasemonkey%20script/trial.js
+// @updateURL    https://raw.githubusercontent.com/hughht5/MineHubScripts/master/Greasemonkey%20script/valeTrial.js
+// @downloadURL  https://raw.githubusercontent.com/hughht5/MineHubScripts/master/Greasemonkey%20script/valeTrial.js
 // ==/UserScript==
 
 (function () {
