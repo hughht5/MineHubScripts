@@ -301,6 +301,8 @@
         this.children[0].textContent == 'Maximum size (mm)' ||
         this.children[0].textContent == '% above maximum size' ||
         this.children[0].textContent == 'Minimum size (mm)' ||
+        this.children[0].textContent == 'Emissions - Mine Operations (MT)' ||
+        this.children[0].textContent == 'Emissions - Logistics (MT)' ||
         this.children[0].textContent == '% below minimum size') {
         //skip if it's one we want
       } else {
@@ -319,6 +321,10 @@
           this.children[0].textContent = "Maximum size (mm)";
         } else if (this.children[0].textContent == 'Zn (%)') {
           this.children[0].textContent = "% above maximum size";
+        } else if (this.children[0].textContent == 'Cl (%)') {
+          this.children[0].textContent = "Emissions - Mine Operations (MT)";
+        } else if (this.children[0].textContent == 'Cr (%)') {
+          this.children[0].textContent = "Emissions - Logistics (MT)";
         } else {
           //remove the rest
           this.remove();
