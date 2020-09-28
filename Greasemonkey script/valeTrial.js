@@ -17,7 +17,7 @@
   var changed = false;
 
   window.addEventListener('load', function () {
-    console.log("It's loaded! - changing text every 1/2 second. Try to find a better way to detect onLoad so we can call run() only once.");
+    console.log("It's loaded! - changing text every 1/2 second. Try to find a better way to detect onLoad sow e can call run() only once.");
     run();
     setInterval(run, 500); // check again in a half second
   });
@@ -182,8 +182,8 @@
     $(".col").each(function () {
       if (this.children[0] != undefined) {
         if (this.children[0].textContent == 'First Provisional Invoice Payable Upon Vessel Arrival' ||
-          this.children[0].textContent == 'LIBOR and Additional Interest Rate' ||
-          this.children[0].textContent == 'Second Provisional Invoice'
+                this.children[0].textContent == 'LIBOR and Additional Interest Rate' ||
+                this.children[0].textContent == 'Second Provisional Invoice'
         ) {
           this.remove();
         }
@@ -243,8 +243,8 @@
     $(".bx--col-md-8").each(function () {
       if (this.children[0].children[0] != undefined) {
         if (this.children[0].children[0].textContent == 'First Provisional Invoice Payable Upon Vessel Arrival (%)' ||
-          this.children[0].children[0].textContent == 'LIBOR + Additional Interest Rate (%)' ||
-          this.children[0].children[0].textContent == 'Second Provisional Invoice Payable Upon Information Not Being Available Within Payment Period(%)'
+                this.children[0].children[0].textContent == 'LIBOR + Additional Interest Rate (%)' ||
+                this.children[0].children[0].textContent == 'Second Provisional Invoice Payable Upon Information Not Being Available Within Payment Period(%)'
         ) {
           this.remove();
         }
@@ -290,20 +290,20 @@
     console.log('removing element boxes in production report page');
     $(".col-md-1.mb-3").each(function () {
       if (this.children[0].textContent == 'Weight (WMT)' ||
-        this.children[0].textContent == 'Weight (DMT)' ||
-        this.children[0].textContent == 'Moisture (%)' ||
-        this.children[0].textContent == 'Al2O3 (%)' ||
-        this.children[0].textContent == 'Cu (%)' ||
-        this.children[0].textContent == 'Fe (%)' ||
-        this.children[0].textContent == 'P (%)' ||
-        this.children[0].textContent == 'S (%)' ||
-        this.children[0].textContent == 'SiO2 (%)' ||
-        this.children[0].textContent == 'LOI (%)' ||
-        this.children[0].textContent == 'Mn (%)' ||
-        this.children[0].textContent == 'Maximum size (mm)' ||
-        this.children[0].textContent == '% above maximum size' ||
-        this.children[0].textContent == 'Minimum size (mm)' ||
-        this.children[0].textContent == '% below minimum size') {
+              this.children[0].textContent == 'Weight (DMT)' ||
+              this.children[0].textContent == 'Moisture (%)' ||
+              this.children[0].textContent == 'Al2O3 (%)' ||
+              this.children[0].textContent == 'Cu (%)' ||
+              this.children[0].textContent == 'Fe (%)' ||
+              this.children[0].textContent == 'P (%)' ||
+              this.children[0].textContent == 'S (%)' ||
+              this.children[0].textContent == 'SiO2 (%)' ||
+              this.children[0].textContent == 'LOI (%)' ||
+              this.children[0].textContent == 'Oth.Metals (%)' ||
+              this.children[0].textContent == 'Maximum size (mm)' ||
+              this.children[0].textContent == '% above maximum size' ||
+              this.children[0].textContent == 'Minimum size (mm)' ||
+              this.children[0].textContent == '% below minimum size') {
         //skip if it's one we want
       } else {
         //repurpose those that we need
@@ -311,6 +311,8 @@
           this.children[0].textContent = "LOI (%)";
         } else if (this.children[0].textContent == 'Na (%)') {
           this.children[0].textContent = "P (%)";
+        } else if (this.children[0].textContent == 'Te (%)') {
+          this.children[0].textContent = "Oth.Metals (%)";
         } else if (this.children[0].textContent == 'Thermal Coal (%)') {
           this.children[0].textContent = "Minimum size (mm)";
         } else if (this.children[0].textContent == 'Sn (%)') {
@@ -341,7 +343,7 @@
     //remove some fields
     $(".headerLabel").each(function () {
       if (this.textContent == 'Deductions:' ||
-        this.textContent == 'Lot Breakdown'
+              this.textContent == 'Lot Breakdown'
       ) {
         this.remove();
       }
@@ -349,11 +351,11 @@
     $(".col").each(function () {
       if (this.children[0].children[0] != undefined) {
         if (this.children[0].children[0].textContent == 'Payables' ||
-          this.children[0].children[0].textContent == 'Treatment Charge' ||
-          this.children[0].children[0].textContent == 'Parts for Seller' ||
-          this.children[0].children[0].textContent == 'Parts for Buyer' ||
-          this.children[0].children[0].textContent == 'Parts held in reserve' ||
-          this.children[0].children[0].textContent == 'Penalties:'
+                this.children[0].children[0].textContent == 'Treatment Charge' ||
+                this.children[0].children[0].textContent == 'Parts for Seller' ||
+                this.children[0].children[0].textContent == 'Parts for Buyer' ||
+                this.children[0].children[0].textContent == 'Parts held in reserve' ||
+                this.children[0].children[0].textContent == 'Penalties:'
         ) {
           this.remove();
         }
@@ -386,10 +388,10 @@
       } else if (this.textContent == "Cobalt") {
         this.textContent = "Lump Ore";
       } else if (this.textContent == "Pellet Feed Carajas PFCJ" ||
-        this.textContent == "Sinter Feed Carajas" ||
-        this.textContent == "Special Coarse Product Guaiba" ||
-        this.textContent == "Lump Ore" ||
-        this.textContent == "Pellets") {
+              this.textContent == "Sinter Feed Carajas" ||
+              this.textContent == "Special Coarse Product Guaiba" ||
+              this.textContent == "Lump Ore" ||
+              this.textContent == "Pellets") {
         //do nothing
       } else {
         this.remove();
@@ -400,9 +402,9 @@
     $(".bx--col-md-2").each(function () {
       if (this.children[0].children[0] != undefined) {
         if (this.children[0].children[0].textContent == 'Payables(%)' ||
-          this.children[0].children[0].textContent == 'Parts for Seller' ||
-          this.children[0].children[0].textContent == 'Parts for Buyer' ||
-          this.children[0].children[0].textContent == 'Parts held in reserve'
+                this.children[0].children[0].textContent == 'Parts for Seller' ||
+                this.children[0].children[0].textContent == 'Parts for Buyer' ||
+                this.children[0].children[0].textContent == 'Parts held in reserve'
         ) {
           this.remove();
         }
@@ -411,7 +413,7 @@
     $(".bx--col-md-4").each(function () {
       if (this.children[0].children[0] != undefined) {
         if (this.children[0].children[0].textContent == 'Penalties (USD per DMT)' ||
-          this.children[0].children[0].textContent == 'Treatment Charge (USD per DMT)'
+                this.children[0].children[0].textContent == 'Treatment Charge (USD per DMT)'
         ) {
           this.remove();
         }
@@ -426,7 +428,7 @@
     });
     $(".header").each(function () {
       if (this.textContent == 'Deductions:' ||
-        this.textContent == 'Lot Breakdown:'
+              this.textContent == 'Lot Breakdown:'
       ) {
         this.remove();
       }
