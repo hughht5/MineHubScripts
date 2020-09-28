@@ -333,7 +333,7 @@
       function changeViewMaterialsAndQuality() {
         //replace some words
         var replacements = {
-          "DMT of Product": "Quantity (WMT)",
+          "DMT Of Product": "Quantity (WMT)",
           "Contract Metal Type": "Material",
           "Splitting Limits": "Shipping Tolerance (%)",
           "Mine General Assay Range:": "Premium / Discount"
