@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MineHub Trial Vale
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.7
 // @description  temporary script for the current trial
 // @author       hugh halford-thompson, MineHub
 // @match        https://minehub-ui-sandbox.eu-de.mybluemix.net/*
@@ -29,7 +29,6 @@
           "Fluorine": "Pellet Feed Carajas PFCJ",
           "Chlorine": "Carajas Iron Ore",
           "Indium": "Special Coarse Product Guaiba",
-          "Iron Ore": "Pellets",
           "Cobalt": "Lump Ore",
           "Contract": "Transaction"
         };
@@ -383,15 +382,12 @@
             this.textContent = "Sinter Feed & Carajas";
           } else if (this.textContent == "Indium") {
             this.textContent = "Special Coarse Product Guaiba";
-          } else if (this.textContent == "Iron Ore") {
-            this.textContent = "Pellets";
           } else if (this.textContent == "Cobalt") {
             this.textContent = "Lump Ore";
           } else if (this.textContent == "Pellet Feed Carajas PFCJ" ||
                   this.textContent == "Carajas Iron Ore" ||
                   this.textContent == "Special Coarse Product Guaiba" ||
-                  this.textContent == "Lump Ore" ||
-                  this.textContent == "Pellets") {
+                  this.textContent == "Lump Ore") {
             //do nothing
           } else {
             this.remove();
