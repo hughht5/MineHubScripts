@@ -6,6 +6,7 @@
 // @author       hugh halford-thompson, MineHub
 // @match        https://minehub-ui-sandbox.eu-de.mybluemix.net/*
 // @match        https://minehub-ui-uat.mybluemix.net/*
+// @match        https://minehub-ui-dev.mybluemix.net/*
 // @grant        none
 // @run-at       document-start
 // @updateURL    https://raw.githubusercontent.com/hughht5/MineHubScripts/master/Greasemonkey%20script/valeTrial.js
@@ -295,7 +296,9 @@
                   this.children[0].textContent == 'Cu (%)' ||
                   this.children[0].textContent == 'Fe (%)' ||
                   this.children[0].textContent == 'P (%)' ||
+                  this.children[0].textContent == 'PPC (%)' ||
                   this.children[0].textContent == 'S (%)' ||
+                  this.children[0].textContent == 'Mn (%)' ||
                   this.children[0].textContent == 'SiO2 (%)' ||
                   this.children[0].textContent == 'LOI (%)' ||
                   this.children[0].textContent == 'Oth.Metals (%)' ||
@@ -310,6 +313,8 @@
               this.children[0].textContent = "LOI (%)";
             } else if (this.children[0].textContent == 'Na (%)') {
               this.children[0].textContent = "P (%)";
+            } else if (this.children[0].textContent == 'Mo (%)') {
+              this.children[0].textContent = "PPC (%)";
             } else if (this.children[0].textContent == 'Te (%)') {
               this.children[0].textContent = "Oth.Metals (%)";
             } else if (this.children[0].textContent == 'Thermal Coal (%)') {
