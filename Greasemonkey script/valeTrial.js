@@ -302,10 +302,9 @@
                   this.children[0].textContent == 'SiO2 (%)' ||
                   this.children[0].textContent == 'LOI (%)' ||
                   this.children[0].textContent == 'Oth.Metals (%)' ||
-                  this.children[0].textContent == 'Maximum size (mm)' ||
-                  this.children[0].textContent == '% above maximum size' ||
-                  this.children[0].textContent == 'Minimum size (mm)' ||
-                  this.children[0].textContent == '% below minimum size') {
+                  this.children[0].textContent == 'Above 6.30mm (PCT)' ||
+                  this.children[0].textContent == 'Below 0.15mm (PCT)' ||
+                  this.children[0].textContent == 'Above 1.00mm (PCT)') {
             //skip if it's one we want
           } else {
             //repurpose those that we need
@@ -318,13 +317,11 @@
             } else if (this.children[0].textContent == 'Te (%)') {
               this.children[0].textContent = "Oth.Metals (%)";
             } else if (this.children[0].textContent == 'Thermal Coal (%)') {
-              this.children[0].textContent = "Minimum size (mm)";
+              this.children[0].textContent = "Above 6.30mm (PCT)";
             } else if (this.children[0].textContent == 'Sn (%)') {
-              this.children[0].textContent = "% below minimum size";
+              this.children[0].textContent = "Below 0.15mm (PCT)";
             } else if (this.children[0].textContent == 'Ti (%)') {
-              this.children[0].textContent = "Maximum size (mm)";
-            } else if (this.children[0].textContent == 'Zn (%)') {
-              this.children[0].textContent = "% above maximum size";
+              this.children[0].textContent = "Above 1.00mm (PCT)";
             } else {
               //remove the rest
               this.remove();
